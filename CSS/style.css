@@ -1,0 +1,754 @@
+/* **************************************** Start global **************************************** */
+:root {
+  --main-color: #fff;
+  --secondary-color: #1c1c1c;
+  --heading-color: #343434;
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url(../webfonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-600";
+  src: url(../webfonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url(../webfonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-200";
+  src: url(../webfonts/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Montserrat-400";
+  src: url(../webfonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat-500";
+  src: url(../webfonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat-600";
+  src: url(../webfonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-700";
+  src: url(../webfonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-800";
+  src: url(../webfonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-900";
+  src: url(../webfonts/Montserrat-Black.ttf);
+}
+
+body {
+  font-family: Poppins-400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: Montserrat-800;
+}
+.w-90 {
+  width: 95%;
+}
+.w-80 {
+  width: 80%;
+}
+.text-first {
+  color: #748182;
+}
+.text-second {
+  color: #999;
+}
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.75rem;
+}
+.section-header h3 {
+  font-family: Montserrat-900;
+  font-size: 2.5rem;
+  line-height: 2.0625rem;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  z-index: 1;
+}
+.section-header h3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  background-image: url(../images/dots.png);
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+}
+/* **************************************** End global **************************************** */
+
+/* **************************************** Start NavBar **************************************** */
+.nav-shadow {
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+.navbar .navbar-brand {
+  font-family: "Montserrat-800";
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #111111;
+}
+.navbar .nav-item {
+  margin: 5px 10px;
+}
+.navbar .nav-link {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #111;
+  margin: 10px 10px;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+.navbar .nav-link.active {
+  border-bottom: #111 2px solid;
+}
+/* **************************************** End NavBar **************************************** */
+
+/* **************************************** Start Header **************************************** */
+.home {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.home .layer {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.home .layer h5 {
+  color: #fff;
+  font-family: "Montserrat-800";
+  font-size: 3.125rem;
+  line-height: 3.4375rem;
+}
+.home .layer span {
+  color: #fff;
+  font-family: "Montserrat-200";
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.home .layer .header-icons span {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10px 2px;
+}
+.home .layer .header-icons span i {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1::after {
+  content: " Larry Daniels|";
+  font-family: "Montserrat-200";
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  animation: Typing 8s infinite alternate;
+}
+@keyframes Typing {
+  0% {
+    content: " Larry Daniels|";
+  }
+  2% {
+    content: " Larry Daniel|";
+  }
+  4% {
+    content: " Larry Danie|";
+  }
+  6% {
+    content: " Larry Dani|";
+  }
+  8% {
+    content: " Larry Dan|";
+  }
+  10% {
+    content: " Larry Da|";
+  }
+  12% {
+    content: " Larry D|";
+  }
+  14% {
+    content: " Larry |";
+  }
+  16% {
+    content: " Larr|";
+  }
+  18% {
+    content: " Lar|";
+  }
+  20% {
+    content: " La|";
+  }
+  22% {
+    content: " L|";
+  }
+  24% {
+    content: " |";
+  }
+  26% {
+    content: " D|";
+  }
+  28% {
+    content: " De|";
+  }
+  30% {
+    content: " Dev|";
+  }
+  32% {
+    content: " Deve|";
+  }
+  34% {
+    content: " Devel|";
+  }
+  36% {
+    content: " Develo|";
+  }
+  38% {
+    content: " Develop|";
+  }
+  40% {
+    content: " Develope|";
+  }
+  42% {
+    content: " Developer|";
+  }
+  44% {
+    content: " Develope|";
+  }
+  46% {
+    content: " Develop|";
+  }
+  48% {
+    content: " Devel|";
+  }
+  50% {
+    content: " Deve|";
+  }
+  50% {
+    content: " Dev|";
+  }
+  52% {
+    content: " De|";
+  }
+  54% {
+    content: " D|";
+  }
+  56% {
+    content: " |";
+  }
+  58% {
+    content: " D|";
+  }
+  60% {
+    content: " De|";
+  }
+  62% {
+    content: " Des|";
+  }
+  64% {
+    content: " Desi|";
+  }
+  66% {
+    content: " Desig|";
+  }
+  68% {
+    content: " Design|";
+  }
+  70% {
+    content: " Designe|";
+  }
+  72% {
+    content: " Designer|";
+  }
+  74% {
+    content: " Designe|";
+    content: " Design|";
+  }
+  76% {
+    content: " Desig|";
+  }
+  78% {
+    content: " Desi|";
+  }
+  80% {
+    content: " Des|";
+  }
+  80% {
+    content: " De|";
+  }
+  82% {
+    content: " D|";
+  }
+  84% {
+    content: " |";
+  }
+  86% {
+    content: " La|";
+  }
+  88% {
+    content: " Larr|";
+  }
+  90% {
+    content: " Larry|";
+  }
+  92% {
+    content: " Larry D|";
+  }
+  94% {
+    content: " Larry Dan|";
+  }
+  96% {
+    content: " Larry Danie|";
+  }
+  98% {
+    content: " Larry Daniel|";
+  }
+  100% {
+    content: " Larry Daniels|";
+  }
+}
+/* **************************************** End Header **************************************** */
+/* **************************************** Start About **************************************** */
+.about {
+  padding: 100px 0;
+}
+.about .about-image .image-container {
+  position: relative;
+  padding-left: 30px;
+}
+.about .about-image .image-container::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../images/dots.png);
+  z-index: -1;
+}
+
+.about-progress .progress-bar {
+  background-color: var(--secondary-color) !important;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+
+  font-family: "Montserrat-500";
+}
+.about-progress .progress,
+.progress-stacked {
+  height: 25px;
+  background-color: #f7f7f7;
+  box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.4) inset;
+}
+.about .about-buttons button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 0.8125rem;
+  line-height: 1.1875rem;
+  border: 1px solid var(--secondary-color);
+}
+.btn1 {
+  background-color: var(--secondary-color);
+  transition: all 0.5s;
+}
+.btn1 a {
+  color: #fff;
+  transition: all 0.5s;
+}
+.about .about-buttons .btn2 {
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.about .about-buttons .btn2 a {
+  color: var(--heading-color);
+  transition: all 0.5s;
+}
+.btn1:hover {
+  background-color: #fff;
+}
+.btn1:hover a {
+  color: var(--heading-color);
+}
+.about .about-buttons .btn2:hover {
+  background-color: var(--secondary-color);
+}
+.about .about-buttons .btn2:hover a {
+  color: #fff;
+}
+/* **************************************** End About **************************************** */
+/* **************************************** Start Services **************************************** */
+.services {
+  background-color: #f7f7f7;
+}
+
+.card-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
+}
+.services .card-body h4 {
+  font-family: "Montserrat-800";
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+.services p {
+  word-spacing: 2px;
+  color: #748182;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+.services .card-icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-color: #f4f4f4;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  color: #111;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.services .card:hover .card-icon {
+  background-color: #111;
+  color: #fff;
+}
+/* **************************************** End Services **************************************** */
+/* **************************************** Start portfolio **************************************** */
+.portfolio .inner {
+  position: relative;
+}
+.portfolio .inner .layer-icons {
+  display: flex;
+  gap: 10px 5px;
+  transform: translateY(20px);
+  transition: all.5s;
+}
+.portfolio .inner .layer .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #111;
+  border: 1px solid #111;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.portfolio .inner .layer {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  top: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+.portfolio .inner .layer h6 {
+  font-family: "Montserrat-700";
+  font-size: 0.75rem;
+  line-height: 0.8125rem;
+  transform: translateY(-20px);
+  transition: all.5s;
+}
+.portfolio .inner .layer i {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+.portfolio .inner .icon:hover {
+  background-color: white;
+  color: #111;
+}
+.portfolio .inner:hover .layer {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio .inner:hover h6 {
+  transform: translateY(0);
+}
+.portfolio .inner:hover .layer-icons {
+  transform: translateY(0);
+}
+
+.portfolio .modal-content {
+  background-color: transparent !important;
+  border: none;
+}
+.portfolio .modal-header {
+  border: none;
+  padding: 0;
+}
+.portfolio .modal-header .btn-close {
+  --bs-btn-close-bg: none;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: white;
+  cursor: zoom-out;
+}
+.portfolio .nav-pills .nav-link.active {
+  background-color: transparent;
+  color: #222;
+  border-bottom: #222 solid 3px;
+  border-radius: 0;
+}
+.portfolio .nav-pills .nav-link {
+  font-family: "Poppins-700";
+  color: #222;
+}
+/* **************************************** End portfolio **************************************** */
+
+/* **************************************** Start Clients **************************************** */
+.Testimonials {
+  background-color: #f7f7f7;
+}
+.Testimonials .image-container {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.Testimonials .testimonials-caption p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #748182;
+}
+.Testimonials .testimonials-caption h4 {
+  font-family: "Montserrat-600";
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+.Testimonials .testimonials-caption span {
+  font-family: "Poppins-600";
+  font-size: 0.75rem;
+  line-height: 1.0625rem;
+  color: #888;
+}
+.Testimonials .carousel-indicators [data-bs-target] {
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #869791;
+  transition: all 0.5s;
+}
+
+/* **************************************** End Clients **************************************** */
+/* **************************************** Start Counter **************************************** */
+.counter .inner i {
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  color: var(--heading-color);
+}
+.counter .inner h3 {
+  font-family: "Montserrat-900";
+  font-size: 1.875rem;
+  line-height: 2.0625rem;
+  margin: 10px 0;
+}
+.counter .inner p {
+  font-family: "Poppins-600";
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #748182;
+}
+/* **************************************** End Counter **************************************** */
+/* **************************************** Start Team **************************************** */
+.team {
+  background-color: #f7f7f7;
+}
+
+.team .card .layer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  left: 5px;
+  bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.team .card:hover .layer {
+  opacity: 1;
+  transform: rotateY(0) scale(1, 1);
+}
+.team .card .layer .layer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+}
+.team .card .layer span {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  display: block;
+  background-color: #111;
+  position: relative;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.team .card .layer span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: color 0.5s;
+}
+.team .card .layer span:hover {
+  background-color: white;
+}
+.team .card .layer span:hover i {
+  color: #111;
+}
+.team .card .image-container img {
+  transition: transform 0.5s;
+}
+.team .card .image-container:hover img {
+  transform: scale(1.2);
+}
+.team .card-body {
+  background-color: #5b5b5b;
+}
+.team .card-body h4 {
+  font-family: "Montserrat-500";
+  font-size: 1.5625rem;
+  line-height: 1.75rem;
+  color: white;
+}
+.team .card-body h5 {
+  font-family: "Montserrat-700";
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  color: white;
+}
+/* **************************************** End Team **************************************** */
+/* **************************************** Start Contact **************************************** */
+
+.contact .inner span {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #f4f4f4;
+  position: relative;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.contact .inner span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5625rem;
+  line-height: 1.5625rem;
+  color: var(--heading-color);
+  transition: all 0.5s;
+}
+.contact .inner h6 {
+  font-family: "Montserrat-700";
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: var(--heading-color);
+}
+.contact .inner p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #748182;
+}
+
+.contact .inner:hover span {
+  background-color: #111;
+}
+.contact .inner:hover i {
+  color: white;
+}
+
+.form-control {
+  background-color: #f4f4f4;
+  border: 0;
+}
+.form-control:focus {
+  box-shadow: none;
+  background-color: #f4f4f4;
+}
+textarea {
+  height: 150px;
+  max-height: 150px;
+}
+.contact form button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 0.8125rem;
+  line-height: 1.1875rem;
+  cursor: pointer;
+  color: white;
+}
+.contact form button:hover {
+  color: #111;
+}
+/* **************************************** End Contact **************************************** */
+.copyRight {
+  background-color: var(--secondary-color);
+}
+.copyRight p {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.3125rem;
+  color: #748182;
+  word-spacing: 2px;
+}
+
+@media screen and (min-width: 768px){
+  h1::after
+  {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+  }
+  .home .layer span
+  {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+  }
+}
